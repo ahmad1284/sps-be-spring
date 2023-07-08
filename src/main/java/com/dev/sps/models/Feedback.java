@@ -7,6 +7,7 @@ import lombok.Data;
 
 @Data
 @Entity
+@Table(name = "FEEDBACKS")
 public class Feedback {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

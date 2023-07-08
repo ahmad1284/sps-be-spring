@@ -5,6 +5,7 @@ import lombok.Data;
 
 @Data
 @Entity
+@Table(name = "STATUSES")
 public class Status {
     
     @Id
