@@ -1,5 +1,7 @@
 package com.dev.sps.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -15,6 +17,7 @@ public class User {
     
     private String email;
     
+    @JsonIgnore
     private String password;
     
     @ManyToOne
